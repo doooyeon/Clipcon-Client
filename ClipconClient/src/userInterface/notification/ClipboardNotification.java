@@ -21,7 +21,7 @@ import javafx.util.Duration;
 public class ClipboardNotification extends Notification {
 	
 	static protected ObservableList<Popup> popups = FXCollections.observableArrayList();
-	static protected Stage stage = new Stage();
+	private Stage stage = new Stage();
 	
 	public ClipboardNotification() {
 		super();

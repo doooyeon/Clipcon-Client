@@ -4,7 +4,6 @@
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
-<?import com.jfoenix.controls.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.*?>
@@ -17,7 +16,7 @@
 <!--   	  <Button fx:id="bugReportBtn" layoutX="180.0" layoutY="8.0" prefHeight="20.0" prefWidth="100.0" Text="Bug Report" style="-fx-background-color: transparent; -fx-text-fill: white;"/> -->
       <Button fx:id="settingBtn" layoutX="275.0" layoutY="10.0" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: transparent; -fx-background-image: url('/resources/SettingBtn.png'); -fx-background-repeat: no-repeat;"/>
    	  <Button fx:id="exitBtn" layoutX="305.0" layoutY="10.0" prefHeight="20.0" prefWidth="22.0" style="-fx-background-color: transparent; -fx-background-image: url('/resources/ExitBtn.png'); -fx-background-repeat: no-repeat;"/>
-      <JFXTabPane fx:id="tabPane" layoutY="40.0" prefHeight="440.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane fx:id="tabPane" layoutY="40.0" prefHeight="440.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="   INFO   ">
             <content>
@@ -61,6 +60,6 @@
             </content>
           </Tab>
         </tabs>
-      </JFXTabPane>
+      </TabPane>
    </children>
 </AnchorPane>

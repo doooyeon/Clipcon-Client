@@ -1,14 +1,41 @@
-.jfx-tab-pane .headers-region {
+.tab-pane .headers-region {
     -fx-background-color: #f16868;
 }
-.jfx-tab-pane .tab-header-background {
+.tab-pane .tab-header-background {
     -fx-background-color: #f16868;
-}
-.jfx-tab-pane .tab-selected-line {
-    -fx-background-color: #ffffff;
 }
 
-.jfx-tab-pane .tab-label {
+.tab .tab-label {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-text-fill: #f79f9f;
     -fx-font-size: 12pt;
     -fx-font-family: "affogato bold";
+}
+
+.tab {
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-background-color: #f16868;
+}
+
+.tab:selected {
+    -fx-background-color: #ef5a5a;
+}
+
+.tab:selected .tab-label {
+	-fx-text-fill: #ffffff;
+}
+
+.tab:focused {
+    -fx-focus-color: transparent;
+}
+
+.tab {
+    -fx-padding: 3 5 3 5;
+}
+
+.tab:selected .focus-indicator {
+    -fx-focus-color: transparent;
+    -fx-border-color: transparent;
 }

@@ -46,8 +46,6 @@ public class RetrofitDownloadData {
 	private final int CHUNKSIZE = 0xFFFF; // 65536
 	private String charset = "UTF-8";
 
-	public static boolean isDownloading = false;
-
 	/** Constructor
 	 * setting userName and groupPK. */
 	public RetrofitDownloadData(String userName, String groupPK) {

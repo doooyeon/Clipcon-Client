@@ -18,6 +18,7 @@ import javax.websocket.EncodeException;
 
 import application.Main;
 import javafx.application.Platform;
+import javafx.stage.Modality;
 import model.message.Message;
 import server.Endpoint;
 
@@ -86,6 +87,8 @@ public class TrayIconManager {
 			@Override
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				Platform.runLater(() -> {
+					Main.getPrimaryStage().initModality(Modality.APPLICATION_MODAL);
+					Main.getPrimaryStage().setAlwaysOnTop(true);
 					Main.getPrimaryStage().show();
 				});
 			}
@@ -97,6 +100,8 @@ public class TrayIconManager {
 			public void mousePressed(MouseEvent e) {
 				if (e.getClickCount() == 2) { // Double-click the tray icon
 					Platform.runLater(() -> {
+						Main.getPrimaryStage().initModality(Modality.APPLICATION_MODAL);
+						Main.getPrimaryStage().setAlwaysOnTop(true);
 						Main.getPrimaryStage().show();
 					});
 				}

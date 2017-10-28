@@ -11,7 +11,6 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.text.Text;
 import lombok.Getter;
 import lombok.Setter;
-import transfer.RetrofitDownloadData;
 import userInterface.UserInterface;
 
 public class ProgressBarScene implements Initializable {
@@ -45,7 +44,7 @@ public class ProgressBarScene implements Initializable {
 		number++;
 
 		textArray[index] = text;
-		if (RetrofitDownloadData.isDownloading) {
+		if (MainScene.isDownloading) {
 			textArray[index].setText("Downloading");
 		}
 
